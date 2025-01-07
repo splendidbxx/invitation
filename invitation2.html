@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕눈아들나는순자라개</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Dongle', serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            background: url('https://i.pinimg.com/originals/7d/7c/79/7d7c79f57f2bf8fc2b43b9a5e5a2a96b.gif') center/cover no-repeat;
+        }
+
+@media (max-width: 600px) {
+	h1 {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.button-container {
+		flex-direction: column;
+	}
+
+	button {
+		padding: 1rem 1.5rem;
+		font-size: 1rem;
+	}
+
+	.container {
+		width: 90%;
+	}
+}
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #000;
+            line-height: 1.3;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            font-size: 1.5rem;
+            font-weight: regular;
+            color: #fff;
+            background-color: #87ceeb;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+	font-family: 'Dongle', serif;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        button:active {
+            transform: scale(1.05);
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>눈아들 안녕? 나는 순자라개.<br>생일 파티에 초대된 것을 추카해.<br>눈아들은 어떤 장르를 죠아해?</h1>
+        <div class="button-container">
+            <button onclick="goToRopan()">로판물</button>
+            <button onclick="goToModern()">현대물</button>
+        </div>
+    </div>
+
+    <script>
+        function goToRopan() {
+            window.location.href = 'ropan.html'; // 로판물 화면으로 이동
+        }
+
+        function goToModern() {
+            window.location.href = 'modern.html'; // 현대물 화면으로 이동
+        }
+    </script>
+</body>
+</html>
